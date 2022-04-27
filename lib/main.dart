@@ -31,10 +31,7 @@ Widget getBody() {
         ),
       ),
       child: Center(
-        child: TextButton(
-          onPressed: () {},
-          child: getButtom(),
-        ),
+        child: getButtom(),
       ),
     ),
   );
