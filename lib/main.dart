@@ -30,9 +30,7 @@ Widget getBody() {
           image: AssetImage('images/drum.png'),
         ),
       ),
-      child: Center(
-        child: getButtom(),
-      ),
+      child: getButtom(),
     ),
   );
 }
@@ -61,8 +59,7 @@ Widget getRowFirst() {
         child: TextButton(
           child: Text(''),
           onPressed: () {
-            var player = AudioCache();
-            player.play('c1.wav');
+            playSound('c1.wav');
           },
         ),
       ),
@@ -70,8 +67,7 @@ Widget getRowFirst() {
         child: TextButton(
           child: Text(''),
           onPressed: () {
-            var player = AudioCache();
-            player.play('c2.wav');
+            playSound('c2.wav');
           },
         ),
       ),
@@ -86,13 +82,17 @@ Widget getRowSecend() {
       Expanded(
         child: TextButton(
           child: Text(''),
-          onPressed: () {},
+          onPressed: () {
+            playSound('h1.wav');
+          },
         ),
       ),
       Expanded(
         child: TextButton(
           child: Text(''),
-          onPressed: () {},
+          onPressed: () {
+            playSound('h2.wav');
+          },
         ),
       ),
     ],
@@ -106,15 +106,24 @@ Widget getRowThird() {
       Expanded(
         child: TextButton(
           child: Text(''),
-          onPressed: () {},
+          onPressed: () {
+            playSound('k1.wav');
+          },
         ),
       ),
       Expanded(
         child: TextButton(
           child: Text(''),
-          onPressed: () {},
+          onPressed: () {
+            playSound('k2.wav');
+          },
         ),
       ),
     ],
   );
+}
+
+playSound(String sound) {
+  var player = AudioCache();
+  player.play(sound);
 }
