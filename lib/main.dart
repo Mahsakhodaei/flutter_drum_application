@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-// import 'package:audioplayers/audioplayers.dart';
+import 'package:audioplayers/audioplayers.dart';
 
 void main() {
   runApp(Application());
@@ -64,15 +64,18 @@ Widget getRowFirst() {
         child: TextButton(
           child: Text(''),
           onPressed: () {
-            // var player = AudioCache();
-            // player.play('c1.wav');
+            var player = AudioCache();
+            player.play('c1.wav');
           },
         ),
       ),
       Expanded(
         child: TextButton(
           child: Text(''),
-          onPressed: () {},
+          onPressed: () {
+            var player = AudioCache();
+            player.play('c2.wav');
+          },
         ),
       ),
     ],

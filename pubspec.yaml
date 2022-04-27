@@ -11,13 +11,15 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  
+
 
   cupertino_icons: ^1.0.2
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  # audioplayers: ^0.20.1
+  audioplayers: ^0.20.1
 
 
 flutter:
@@ -27,4 +29,4 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - images/
-    # - assets/
+    - assets/
