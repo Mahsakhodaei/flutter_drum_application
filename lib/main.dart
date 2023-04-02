@@ -11,8 +11,8 @@ class Application extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: Colors.tealAccent,
         body: getBody(),
       ),
     );
@@ -26,8 +26,9 @@ Widget getBody() {
       decoration: BoxDecoration(
         // color: Colors.red,
         image: DecorationImage(
-          fit: BoxFit.fitWidth,
-          image: AssetImage('images/drum.png'),
+          // fit: BoxFit.fitWidth,
+          fit: BoxFit.cover,
+          image: AssetImage('images/drum11.jpg'),
         ),
       ),
       child: getButtom(),
